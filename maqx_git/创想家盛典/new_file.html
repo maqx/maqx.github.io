@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body bgcolor="#fef4d9" onload="next();">
+		<a href="<#ZC_BLOG_HOST#>">站长特效网</a>,站长必备的高质量网页特效和广告代码。zzjs.net，站长js特效。
+		<hr>
+		<!--欢迎来到站长特效网，我们网站收集大量高质量js特效，提供许多广告代码下载，网址：www.zzjs.net，zzjs@msn.com,用.net打造靓站-->
+		<script language="JavaScript">
+			var pos1 = -95;
+			var pos2 = -95;
+			var pos3 = -95;
+			var pos4 = -95;
+			var speed1 = Math.floor(Math.random() * 10) + 2;
+			var speed2 = Math.floor(Math.random() * 10) + 2;
+			var speed3 = Math.floor(Math.random() * 10) + 2;
+			var speed4 = Math.floor(Math.random() * 10) + 2;
+
+			function next() {
+				pos1 += speed1;
+				pos2 += speed2;
+				pos3 += speed3;
+				pos4 += speed4;
+				if (pos1 > 795) pos1 = -95;
+				if (pos2 > 795) pos2 = -95;
+				if (pos3 > 795) pos3 = -95;
+				if (pos4 > 795) pos4 = -95;
+				if (document.layers) {
+					document.layers[0].left = pos1;
+					document.layers[1].left = pos2;
+					document.layers[2].left = pos3;
+					document.layers[3].left = pos4;
+				} //欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+				else {
+					mouse1.style.left = pos1;
+					mouse2.style.left = pos2;
+					mouse3.style.left = pos3;
+					mouse4.style.left = pos4;
+				}
+				window.setTimeout("next();", 10);
+			} //欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+		</script>
+		<div id="mouse1" style="HEIGHT: 100px; LEFT: 0px; POSITION: absolute; TOP: 165px; WIDTH: 100px">
+			<dd><img alt border="0" src="/image/zzjs.ico" width="30" height="30" onclick="javascript:window.open(this.src);" style="cursor:pointer;" onload="return imgzoom(this,600);" onclick="javascript:window.open(this.src);" style="cursor:pointer;" /> </dd>
+		</div>
+		<div id="mouse2" style="HEIGHT: 100px; LEFT: 0px; POSITION: absolute; TOP: 250px; WIDTH: 100px">
+			<dd><img alt border="0" src="/image/zzjs.ico" width="72" height="32" onclick="javascript:window.open(this.src);" style="cursor:pointer;" onload="return imgzoom(this,600);" onclick="javascript:window.open(this.src);" style="cursor:pointer;" /></dd>
+		</div>
+		<div id="mouse3" style="HEIGHT: 100px; LEFT: 0px; POSITION: absolute; TOP: 333px; WIDTH: 100px">
+			<dd><img alt border="0" src="/image/zzjs.ico" width="72" height="32" onclick="javascript:window.open(this.src);" style="cursor:pointer;" onload="return imgzoom(this,600);" onclick="javascript:window.open(this.src);" style="cursor:pointer;" /></dd>
+		</div>
+		<div id="mouse4" style="HEIGHT: 100px; LEFT: 0px; POSITION: absolute; TOP: 415px; WIDTH: 100px">
+			<dd><img alt border="0" src="/image/zzjs.ico" width="72" height="32" onclick="javascript:window.open(this.src);" style="cursor:pointer;" onload="return imgzoom(this,600);" onclick="javascript:window.open(this.src);" style="cursor:pointer;" /></dd>
+		</div>
+	</body>
+
+</html>
