@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body,html{
+				perspective: 2000px;
+				perspective-origin: 50% 50%;
+			}
+			.wrap{
+				margin: 200px auto;
+				width: 200px;
+				height: 200px;	
+				position: relative;	
+				-webkit-transform-style: preserve-3d;
+				animation: roteAniamton 3s linear 1s 100 none;	
+				transform: rotateX(45deg) rotateY(45deg);	
+				
+			}
+			.wrap div{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+			}
+			.wrap div:nth-child(1){
+				background-color: yellow;
+				opacity: 0.9;
+				-webkit-transform: translateZ(100px);
+				-moz-transform: translateZ(100px);
+				-ms-transform: translateZ(100px);
+				-o-transform: translateZ(100px);
+				transform: translateZ(100px);
+			}
+			.wrap div:nth-child(2){
+				background-color: blue;
+				opacity: 0.9;
+				-webkit-transform: translateZ(-100px);
+				-moz-transform: translateZ(-100px);
+				-ms-transform: translateZ(-100px);
+				-o-transform: translateZ(-100px);
+				transform: translateZ(-100px);
+			}
+			.wrap div:nth-child(3){
+				background-color: green;
+				opacity: 0.9;
+				-webkit-transform:rotateY(90deg) translateZ(100px);
+				-moz-transform: rotateY(90deg) translateZ(100px);
+				-ms-transform: rotateY(90deg) translateZ(100px);
+				-o-transform: rotateY(90deg) translateZ(100px);
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			.wrap div:nth-child(4){
+				background-color: pink;
+				opacity: 0.9;
+				-webkit-transform:rotateY(-90deg) translateZ(100px);
+				-moz-transform: rotateY(-90deg) translateZ(100px);
+				-ms-transform: rotateY(-90deg) translateZ(100px);
+				-o-transform: rotateY(-90deg) translateZ(100px);
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			.wrap div:nth-child(5){
+				background-color: gray;
+				opacity: 0.9;
+				-webkit-transform: rotateX(90deg)translateZ(100px);
+				-moz-transform: rotateX(90deg)translateZ(100px);
+				-ms-transform: rotateX(90deg)translateZ(100px);
+				-o-transform: rotateX(90deg)translateZ(100px);
+				transform: rotateX(90deg)translateZ(100px);
+			}
+			.wrap div:nth-child(6){
+				background-color: blueviolet;
+				opacity: 0.9;
+			     -webkit-transform: rotateX(-90deg) translateZ(100px);
+			     -moz-transform: rotateX(-90deg) translateZ(100px);
+			     -ms-transform: rotateX(-90deg) translateZ(100px);
+			     -o-transform: rotateX(-90deg) translateZ(100px);
+			     transform: rotateX(-90deg) translateZ(100px);
+			}
+			@keyframes roteAniamton{
+				0%{
+					
+				}
+				20%{
+					transform: rotatex(90deg)rotateY(90deg);				
+				}
+				40%{
+					transform: rotatex(180deg) rotateY(180deg);
+					
+				}
+				60%{
+					transform: rotatex(270deg)rotateY(270deg);
+				}
+				80%{
+					transform: rotatex(360deg)rotateY(360deg);
+				}
+				100%{
+					
+					transform: rotate(0deg);					
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+
