@@ -189,7 +189,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   text-align: center;
 }
 .etabs li span{
-  display: none;
+  /*display: none;*/
+}
+.etabs li a{
+	 padding: 2px 4px;
 }
 #tab-data-wrap{
   padding: 30px 20px;
